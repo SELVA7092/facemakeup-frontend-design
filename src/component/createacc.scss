@@ -1,0 +1,57 @@
+.layoutbox {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;;
+
+  .alert{
+    position:absolute;
+    top: 10%;
+    animation: alert_ani 0.5s linear;
+  }
+
+  @keyframes alert_ani {
+    0%{opacity: 0;}
+    100%{
+        opacity: 1;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 350px;
+  // background-color: gray;
+  align-items: center;
+  input {
+    padding: 10px;
+    margin: 7px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  button {
+    width: 100%;
+    margin: 7px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  button:hover {
+    font-size: 18px;
+  }
+  hr {
+    width: 350px;
+    background-color: black;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

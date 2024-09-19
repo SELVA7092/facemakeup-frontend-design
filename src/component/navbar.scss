@@ -1,0 +1,99 @@
+                            .navbar {
+                                width: 100%;
+                                height: 50px;
+                                border: none;
+                                padding: none;
+                                background-color: black;
+                                display: flex;
+                                justify-content: space-between;
+                                .navleft {
+                                    display: flex;
+                                }
+                                .navright {
+                                    padding: 0 20px 0 0;
+                                    display: flex;
+                                }
+                            }
+                            
+                            .sign {
+                                padding: 0px 0px 0px 20px;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                                height: 100%;
+                                a {
+                                    text-align: center;
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            
+                            .search {
+                                align-items: center;
+                                justify-content: space-evenly;
+                                display: flex;
+                                P {
+                                    width: 300px;
+                                    color: black;
+                                    font-size: 50px;
+                                    justify-content: center;
+                                    padding: 0px 0px 0px 40px;
+                                }
+                                .searchbox {
+                                    display: flex;
+                                    input {
+                                        outline: auto;
+                                        width: 400px;
+                                        padding: 0px 20px;
+                                        margin: 0px;
+                                        border: 10px;
+                                        border-top-left-radius: 5px;
+                                        border-bottom-left-radius: 5px;
+                                    }
+                                    .searchbut {
+                                        outline: auto;
+                                        padding: 0px;
+                                        width: 50px;
+                                        height: 30px;
+                                        background-color: black;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                    }
+                                    .FaSearch {
+                                        padding: 3px 0px 0px 0px;
+                                        color: white;
+                                        font-size: 20px;
+                                        text-align: center;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                            
+                            .menus {
+                                height: 30px;
+                                display: flex;
+                                font-weight: bold;
+                                padding: 0px 100px 0px 100px;
+                                justify-content: space-between;
+                                .menulist {
+                                    text-decoration: none;
+                                    color: black;
+                                }
+                            }
+                            
+                            @media screen and (max-width:425px) {
+                                .menus {
+                                    display: block;
+                                }
+                            }
+                            
+                            .slider {
+                                img {
+                                    width: 100%;
+                                }
+                            }
