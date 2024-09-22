@@ -6,11 +6,11 @@ import { FaShoppingBag } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import { sliderimg } from "../assets/swiper";
-import {Autoplay} from "swiper/modules"
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/bundle';
+// import { sliderimg } from "../assets/swiper";
+// import {Autoplay} from "swiper/modules"
 // import slider1 from '../assets/slide1.jpeg';
 // import slider2 from '../assets/slide2.jpeg';
 

@@ -1,48 +1,50 @@
 #main-slider {
-  display: flex;
-
-  justify-content: center;
-  .slider {
-    width: 70vw;
-
-    img {
-      // width: 100%;
+    display: flex;
+    justify-content: center;
+    .slider {
+        width: 70vw;
+        img {
+            // width: 100%;
+        }
     }
-  }
 }
 
 .listview {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  font-weight: 700;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-weight: 700;
 }
+
 .listviewcontent {
-padding: 18px;
-  border-style: groove;
-  border-color: black;
+    padding: 18px;
+    border-style: groove;
+    border-color: black;
 }
-.listviewcontent:hover{
- color: rgba(255, 4, 4, 0.975);
+
+.listviewcontent:hover {
+    color: rgba(255, 4, 4, 0.975);
+    cursor: pointer;
 }
-.main{
+
+.main {
     justify-content: center;
 }
-.ShopByBrands{
+
+.ShopByBrands {
     display: flex;
-   justify-content: center;
-   font-size: 40px;
-   margin: 40px;
+    justify-content: center;
+    font-size: 40px;
+    margin: 40px;
 }
-.brandslist{
+
+.brandslist {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    img{
-      border-style: groove;
-      border-color: black;
-
-
-  }
+    img {
+        border-style: groove;
+        border-color: black;
+    }
 }
