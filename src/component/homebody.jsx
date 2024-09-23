@@ -5,6 +5,7 @@ import { sliderimg } from "../assets/swiper";
 import { brandimg } from "../assets/swiper";
 import { Autoplay } from "swiper/modules";
 import "./homebody.scss";
+import {prodetail} from "../assets/swiperpro.jsx";
 
 export default function homebody() {
   return (
@@ -43,16 +44,42 @@ export default function homebody() {
         <div className="listviewcontent">BEST OF MAKEUP</div>
         <div className="listviewcontent">EVERYDAY ESSENTIALS</div>
       </div>
-    <div className="ShopByBrands">Shop By Brands </div>
-    <div className="brandslist">
+      <div className="ShopByBrands">Shop By Brands </div>
+      <div className="brandslist">
+
+        {brandimg.map((data, index) =>
+          <img src={data} alt="" />
+        )}
+        {/* <hr style={{ height: "60px"}} /> */}
         
-     {brandimg.map((data,index)=>
-        <img src={data} alt="" />
-
-
-    )}
 
       </div>
+
+      <div id="main-slider">
+        <div className="slider">
+          <Swiper
+            id="swiper"
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+            loop={true}
+            spaceBetween={1}
+            slidesPerView={4}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            
+            {prodetail.map((data, index) => (
+              <SwiperSlide key={index} className="image-container">
+                <img src={data.img} alt="" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+
     </div>
   );
 }
