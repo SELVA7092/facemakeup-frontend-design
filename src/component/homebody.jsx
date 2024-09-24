@@ -5,7 +5,7 @@ import { sliderimg } from "../assets/swiper";
 import { brandimg } from "../assets/swiper";
 import { Autoplay } from "swiper/modules";
 import "./homebody.scss";
-import {prodetail} from "../assets/swiperpro.jsx";
+import { prodetail } from "../assets/swiperpro.jsx";
 
 export default function homebody() {
   return (
@@ -44,21 +44,22 @@ export default function homebody() {
         <div className="listviewcontent">BEST OF MAKEUP</div>
         <div className="listviewcontent">EVERYDAY ESSENTIALS</div>
       </div>
+
+
       <div className="ShopByBrands">Shop By Brands </div>
+
+      
       <div className="brandslist">
-
-        {brandimg.map((data, index) =>
+        {brandimg.map((data, index) => (
           <img src={data} alt="" />
-        )}
+        ))}
         {/* <hr style={{ height: "60px"}} /> */}
-        
-
       </div>
 
       <div id="main-slider">
         <div className="slider">
           <Swiper
-            id="swiper"
+            id="swiper2"
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
@@ -66,19 +67,46 @@ export default function homebody() {
             modules={[Autoplay]}
             loop={true}
             spaceBetween={1}
-            slidesPerView={4}
+            slidesPerView={5}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            
             {prodetail.map((data, index) => (
-              <SwiperSlide key={index} className="image-container">
+              <SwiperSlide key={index} className="image-cont">
                 <img src={data.img} alt="" />
+                <div>{data.discription}</div>
+                <div>Rs.₹{data.price}</div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
+       <hr />
+      <div className="footer" >
+        <div className="footerview">
+          <div className="aboutus">ABOUT US </div>
+          <div>About Sephora</div>
+          <div>Privacy Policy</div>
+          <div>Terms of Use</div>
+          <div>Sitemap</div>
+          <div>International</div>
+        </div>
+        
+        <div className="footerview">
+          <div className="aboutus">CUSTOMER CARE</div>
+          
+          <div>FAQ</div>
+          <div>Delivery</div>
+          <div>Find a Store</div>
+          <div>Beauty Services</div>
+          <div>Contact Us</div>
+        </div>
+      </div>
+      <hr />
+
+
+<div className="copyrig"><span> © 2024 Sephora India</span></div>
+
 
     </div>
   );
