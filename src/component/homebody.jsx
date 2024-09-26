@@ -6,8 +6,13 @@ import { brandimg } from "../assets/swiper";
 import { Autoplay } from "swiper/modules";
 import "./homebody.scss";
 import { prodetail } from "../assets/swiperpro.jsx";
+import { useState } from "react";
+export default function Homebody() {
 
-export default function homebody() {
+  const [color, setColor] = useState("black")
+  const handleColor=()=>{
+    setColor("red")
+  }
   return (
     <div className="main">
       <div id="main-slider">
@@ -48,7 +53,7 @@ export default function homebody() {
 
       <div className="ShopByBrands">Shop By Brands </div>
 
-      
+
       <div className="brandslist">
         {brandimg.map((data, index) => (
           <img src={data} alt="" />
@@ -95,7 +100,7 @@ export default function homebody() {
         <div className="footerview">
           <div className="aboutus">CUSTOMER CARE</div>
           
-          <div>FAQ</div>
+          <div onMouseEnter={handleColor} style={{color:`${color}`}}>FAQ</div>
           <div>Delivery</div>
           <div>Find a Store</div>
           <div>Beauty Services</div>
