@@ -1,50 +1,74 @@
 #main-slider {
-    display: flex;
-    justify-content: center;
-    .slider {
-        width: 70vw;
-        img {
-            // width: 100%;
-        }
+  display: flex;
+  justify-content: center;
+  .slider {
+    width: 70vw;
+    img {
+      // width: 100%;
     }
+  }
 }
 
 .listview {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    font-weight: 700;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  font-weight: 700;
 }
 
 .listviewcontent {
-    padding: 18px;
-    border-style: groove;
-    border-color: black;
+  padding: 18px;
+  border-style: groove;
+  border-color: black;
 }
 
 .listviewcontent:hover {
-    color: rgba(255, 4, 4, 0.975);
-    cursor: pointer;
+  color: rgba(255, 4, 4, 0.975);
+  cursor: pointer;
 }
 
 .main {
-    justify-content: center;
+  justify-content: center;
 }
 
 .ShopByBrands {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    margin: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 70px;
 }
 
 .brandslist {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+  img {
+    border-style: groove;
+    border-color: black;
+  }
+}
+#main-slider{
+    margin: 50px;
+}
+.footer {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    img {
-        border-style: groove;
-        border-color: black;
+    gap: 100px;
+  .footerview {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .aboutus {
+      font-weight: 500;
     }
+    div{
+        cursor: pointer;
+    }
+  }
+}
+.copyrig{
+    margin: 30PX;
+    display: flex;
+    justify-content: center;
 }
