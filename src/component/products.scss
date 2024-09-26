@@ -1,14 +1,31 @@
 hr {
-    height: 5px;
+  height: 5px;
 }
 
-.productview {
+.product {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  .productview {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
     .productleft {
-        img {
-            height: 70px;
-            width: 70px;
-        }
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        height:80%;
+        width: 60%;
+      }
     }
+    .productright {
+      flex: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .productview{
+        width: 100vh;
+    }
+  }
 }

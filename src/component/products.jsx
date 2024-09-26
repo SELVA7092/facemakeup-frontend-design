@@ -1,26 +1,25 @@
 import Navbars from "./navbar.jsx";
-import swiperpro from "../assets/swiperpro.jsx";
-import "products.scss"
+import { prodetail } from "../assets/swiperpro.jsx";
+import "./products.scss";
 
-function Products(){
-return(
-<>
-<Navbars />
-<hr />
-{/* <div className="productview">
-<div className="productleft">
-<img src="${swiperpro[0].img}" />
-</div>
+function Products() {
+  let product = prodetail[0];
+  return (
+    <>
+      <Navbars />
+      <hr />
+      <div className="product">
+        <div className="productview">
+          <div className="productleft">
+            <img src={product.img} />
+          </div>
 
-
-<div className="productright">
-
-</div>
-</div> */}
-
-hello
-</>
-);
-
+          <div className="productright">
+            <div>{product.name}</div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 export default Products;
