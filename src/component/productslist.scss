@@ -1,0 +1,43 @@
+    .producthome {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .product {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .proview {
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        img {
+            height: 200px;
+        }
+        .proviewimg {}
+        .proviewdetails {
+            display: flex;
+            flex-direction: column;
+            .proviewname {
+                padding: 5px;
+                font-size: 30px;
+            }
+            .provieprice {
+                padding: 5px;
+                font-size: 20px;
+                color: red;
+            }
+            .proviedes {
+                padding: 5px;
+                font-size: 20px;
+                color: rgb(77, 76, 76);
+            }
+        }
+    }
+    
+    .hr {
+        width: 1000px;
+        color: black;
+    }

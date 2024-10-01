@@ -7,12 +7,10 @@ import { Autoplay } from "swiper/modules";
 import "./homebody.scss";
 import { prodetail } from "../assets/swiperpro.jsx";
 import { useState } from "react";
+
 export default function Homebody() {
 
-  const [color, setColor] = useState("black")
-  const handleColor=()=>{
-    setColor("red")
-  }
+  
   return (
     <div className="main">
       <div id="main-slider">
@@ -86,7 +84,7 @@ export default function Homebody() {
           </Swiper>
         </div>
       </div>
-       <hr />
+       {/* <hr />
       <div className="footer" >
         <div className="footerview">
           <div className="aboutus">ABOUT US </div>
@@ -107,10 +105,11 @@ export default function Homebody() {
           <div>Contact Us</div>
         </div>
       </div>
-      <hr />
+      <hr /> */}
+      
 
 
-<div className="copyrig"><span> © 2024 Sephora India</span></div>
+
 
 
     </div>
